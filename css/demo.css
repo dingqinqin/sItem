@@ -1,0 +1,5 @@
+*{margin:0; padding:0;}
+.container{position:relative;}
+.box{padding:5px;float:left;}
+.item{width:200px;padding:5px;border:1px solid #ccc; border-radius:5px; box-shadow:5px 5px 5px 0px #ccc;}
+.item > img{border-radius:5px;display:block;width:200px;height:auto;}

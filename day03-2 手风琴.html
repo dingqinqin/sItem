@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        ul{
+            /*width: 800px;*/
+            height: 200px;
+            border: 1px solid red;
+        }
+        li{
+            width: 80px;
+            height: 198px;
+            overflow: hidden;
+            float: left;
+            background: rebeccapurple;
+            border: 1px solid yellow;
+            position: relative;
+        }
+        .img{
+            height: 198px;
+            width: 100%;
+            background: pink;
+            
+        }
+        .title{
+            position: absolute;
+            background: rgba(0,0,0,0.3);
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+    </style>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script>
+        $(function () {
+            $("li").mouseenter(function () {
+//                $(this).stop().animate({"width":"400"}).siblings().stop().animate({"width":"80"});
+
+                $(this).stop().animate({"width":"400"});
+
+                $(this).find(".title").css("display","none")
+            })
+
+            $("li").mouseleave(function () {
+                $(this).stop().animate({"width":"80"})
+                $(this).find(".title").css("display","block")
+            })
+
+        })
+    </script>
+
+</head>
+<body>
+
+
+<div class="box">
+    <ul>
+        <li>
+            <div class="title">asdfasdf</div>
+            <div style="background: url(img/1.jpg) center" class="img"></div>
+        </li>
+        <li>
+            <div class="title">asdfasdf</div>
+            <div style="background: url(img/2.jpg) center" class="img"></div>
+        </li>
+        <li>
+            <div class="title">asdfasdf</div>
+            <div style="background: url(img/3.jpg) center" class="img"></div>
+        </li>
+        <li>
+            <div class="title">asdfasdf</div>
+            <div style="background: url(img/4.jpg) center" class="img"></div>
+        </li>
+        <li>
+            <div class="title">asdfasdf</div>
+            <div style="background: url(img/5.jpg) center" class="img"></div>
+        </li>
+        <li>
+            <div class="title">asdfasdf</div>
+            <div style="background: url(img/6.jpg) center" class="img"></div>
+        </li>
+
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/lib/jquery/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="js/lib/jqueryUI/jquery-ui.js" ></script>
+		<style>
+			ul{list-style: none;}
+			ul>li{width:300px;height:150px;background-color:#ccc;margin-top:5px;}
+		</style>
+		<script>
+		$( function() {
+		    $("#sortable").sortable();
+		});
+		</script>
+</head>
+<body>
+	<ul id="sortable">
+	  <li class="ui-widget-content">登录输入框</li>
+	  <li class="ui-widget-content">新闻动态</li>
+	  <li class="ui-widget-content">通知公告</li>
+	  <li class="ui-widget-content">最近访客</li>
+	  <li class="ui-widget-content">最新留言</li>
+	</ul>
+	
+</body>
+</html>
